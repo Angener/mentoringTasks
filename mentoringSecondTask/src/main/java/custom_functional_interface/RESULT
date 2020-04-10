@@ -1,0 +1,10 @@
+/Library/Java/JavaVirtualMachines/jdk-13.0.2.jdk/Contents/Home/bin/java "-javaagent:/Applications/IntelliJ IDEA CE.app/Contents/lib/idea_rt.jar=62051:/Applications/IntelliJ IDEA CE.app/Contents/bin" -Dfile.encoding=UTF-8 -classpath /Users/angener/Desktop/epam/webDevelopment/projects/mentoringSecondTask/target/classes custom_functional_interface.Runner
+ExtramuralStudent{groupNumber=3, sureName='Vew', faculty='Flight'}
+ExtramuralStudent{groupNumber=15, sureName='lsih', faculty='Flight'}
+FullTimeStudent{groupNumber=32, sureName='Huio', faculty='Flight'}
+FullTimeStudent{groupNumber=22, sureName='Jfe', faculty='Flight'}
+FullTimeStudent{groupNumber=32, sureName='IGvm', faculty='Flight'}
+FullTimeStudent{groupNumber=22, sureName='fkI', faculty='Flight'}
+SpecialStudent{faculty='Radio', groupNumber=22, sureName='Pou', specialization='Pilot', skill=5.5}
+
+Process finished with exit code 0

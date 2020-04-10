@@ -1,0 +1,49 @@
+/Library/Java/JavaVirtualMachines/jdk-13.0.2.jdk/Contents/Home/bin/java "-javaagent:/Applications/IntelliJ IDEA CE.app/Contents/lib/idea_rt.jar=62046:/Applications/IntelliJ IDEA CE.app/Contents/bin" -Dfile.encoding=UTF-8 -classpath /Users/angener/Desktop/epam/webDevelopment/projects/mentoringSecondTask/target/classes collection_to_stream.Runner
+more than 200 pages:
+Book{title='FIRESTARTER', authors=[Author{name='Stephen King', age=73}], numberOfPages=542}
+Book{title='I, ROBOT', authors=[Author{name='Isaac Asimov', age=101}], numberOfPages=342}
+Book{title='CUJO', authors=[Author{name='Stephen King', age=73}], numberOfPages=743}
+Book{title='IT', authors=[Author{name='Stephen King', age=73}], numberOfPages=323}
+maximum pages:
+Book{title='CUJO', authors=[Author{name='Stephen King', age=73}], numberOfPages=745}
+minimum pages:
+Book{title='Foundation ', authors=[Author{name='Isaac Asimov', age=101}], numberOfPages=125}
+SINGLE AUTHOR
+SINGLE AUTHOR
+SINGLE AUTHOR
+SINGLE AUTHOR
+Book{title='CUJO', authors=[Author{name='Stephen King', age=73}], numberOfPages=745}
+Book{title='Foundation ', authors=[Author{name='Isaac Asimov', age=101}], numberOfPages=125}
+SINGLE AUTHOR
+Book{title='I, ROBOT', authors=[Author{name='Isaac Asimov', age=101}], numberOfPages=344}
+Book{title='Pebble in the sky', authors=[Author{name='Isaac Asimov', age=101}], numberOfPages=182}
+Book{title='IT', authors=[Author{name='Stephen King', age=73}], numberOfPages=325}
+SINGLE AUTHOR
+Book{title='FIRESTARTER', authors=[Author{name='Stephen King', age=73}], numberOfPages=544}
+Sorted by number of pages:
+Book{title='CUJO', authors=[Author{name='Stephen King', age=73}], numberOfPages=745}
+Book{title='FIRESTARTER', authors=[Author{name='Stephen King', age=73}], numberOfPages=544}
+Book{title='Foundation ', authors=[Author{name='Isaac Asimov', age=101}], numberOfPages=125}
+Book{title='I, ROBOT', authors=[Author{name='Isaac Asimov', age=101}], numberOfPages=344}
+Book{title='IT', authors=[Author{name='Stephen King', age=73}], numberOfPages=325}
+Book{title='Pebble in the sky', authors=[Author{name='Isaac Asimov', age=101}], numberOfPages=182}
+Sorted by title:
+Book{title='Foundation ', authors=[Author{name='Isaac Asimov', age=101}], numberOfPages=125}
+Book{title='Pebble in the sky', authors=[Author{name='Isaac Asimov', age=101}], numberOfPages=182}
+Book{title='IT', authors=[Author{name='Stephen King', age=73}], numberOfPages=325}
+Book{title='I, ROBOT', authors=[Author{name='Isaac Asimov', age=101}], numberOfPages=344}
+Book{title='FIRESTARTER', authors=[Author{name='Stephen King', age=73}], numberOfPages=544}
+Book{title='CUJO', authors=[Author{name='Stephen King', age=73}], numberOfPages=745}
+Titles list:
+IT
+CUJO
+FIRESTARTER
+I, ROBOT
+Foundation 
+Pebble in the sky
+Distinct authors:
+[Author{name='Stephen King', age=73}]
+[Author{name='Isaac Asimov', age=101}]
+Book{title='CUJO', authors=[Author{name='Stephen King', age=73}], numberOfPages=745}
+
+Process finished with exit code 0

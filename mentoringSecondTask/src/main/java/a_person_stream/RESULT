@@ -1,0 +1,21 @@
+/Library/Java/JavaVirtualMachines/jdk-13.0.2.jdk/Contents/Home/bin/java "-javaagent:/Applications/IntelliJ IDEA CE.app/Contents/lib/idea_rt.jar=62039:/Applications/IntelliJ IDEA CE.app/Contents/bin" -Dfile.encoding=UTF-8 -classpath /Users/angener/Desktop/epam/webDevelopment/projects/mentoringSecondTask/target/classes a_person_stream.Runner
+before sorting:
+Person{name='Vaska', age=18}
+Person{name='Froska', age=23}
+Person{name='Josaph', age=24}
+Person{name='Tralebusina', age=76}
+Person{name='Perkosrack', age=68}
+Age sort
+Person{name='Vaska', age=18}
+Person{name='Froska', age=23}
+Person{name='Josaph', age=24}
+Person{name='Perkosrack', age=68}
+Person{name='Tralebusina', age=76}
+Name sort
+Person{name='Froska', age=23}
+Person{name='Josaph', age=24}
+Person{name='Perkosrack', age=68}
+Person{name='Tralebusina', age=76}
+Person{name='Vaska', age=18}
+
+Process finished with exit code 0

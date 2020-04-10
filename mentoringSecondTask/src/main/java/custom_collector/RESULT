@@ -1,0 +1,6 @@
+/Library/Java/JavaVirtualMachines/jdk-13.0.2.jdk/Contents/Home/bin/java "-javaagent:/Applications/IntelliJ IDEA CE.app/Contents/lib/idea_rt.jar=62004:/Applications/IntelliJ IDEA CE.app/Contents/bin" -Dfile.encoding=UTF-8 -classpath /Users/angener/Desktop/epam/webDevelopment/projects/mentoringSecondTask/target/classes custom_collector.Runner
+PETER PIPER PICKED A PECK OF PICKLED PEPPERS.
+WE ALL SCREAM FOR ICE-CREAM.
+WATCH THREE SWISS SWATCH WATCH SWITCHES.
+
+Process finished with exit code 0

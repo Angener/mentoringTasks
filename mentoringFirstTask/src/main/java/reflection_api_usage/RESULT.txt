@@ -1,0 +1,318 @@
+/Library/Java/JavaVirtualMachines/jdk-13.0.2.jdk/Contents/Home/bin/java --enable-preview "-javaagent:/Applications/IntelliJ IDEA CE.app/Contents/lib/idea_rt.jar=51548:/Applications/IntelliJ IDEA CE.app/Contents/bin" -Dfile.encoding=UTF-8 -classpath /Users/angener/Desktop/epam/webDevelopment/projects/mentoringFirstTask/target/classes reflection_api_usage.Runner
+Class ================>reflection_api_usage.controller.ClassCreator<================
+Class name:
+ClassCreator
+Class full name:
+reflection_api_usage.controller.ClassCreator
+Class modifiers:
+Public - true
+Protected - false
+Private - false
+Static - false
+Final - true
+Abstract - false
+Superclasses of the class:
+Object
+Interfaces of class:
+Fields of class:
+Methods of class:
+public java.lang.Object reflection_api_usage.controller.ClassCreator.create(java.lang.String)
+public reflection_api_usage.entity.Appliance reflection_api_usage.controller.ClassCreator.createAppliance(float,int)
+public reflection_api_usage.entity.Hoover reflection_api_usage.controller.ClassCreator.createHoover(float,int,java.lang.String,java.lang.String,java.lang.String)
+Constructors of class:
+public reflection_api_usage.controller.ClassCreator()
+Class ================>reflection_api_usage.controller.ClassScanner<================
+Class name:
+ClassScanner
+Class full name:
+reflection_api_usage.controller.ClassScanner
+Class modifiers:
+Public - true
+Protected - false
+Private - false
+Static - false
+Final - true
+Abstract - false
+Superclasses of the class:
+Object
+Interfaces of class:
+Fields of class:
+private scanningClass
+Methods of class:
+private void reflection_api_usage.controller.ClassScanner.print(java.lang.Object)
+private void reflection_api_usage.controller.ClassScanner.executeScanning()
+private java.lang.Class reflection_api_usage.controller.ClassScanner.retrieveScanningClass(java.lang.String)
+private void reflection_api_usage.controller.ClassScanner.setScanningClass(java.lang.String)
+private void reflection_api_usage.controller.ClassScanner.retrieveSimpleName()
+private void reflection_api_usage.controller.ClassScanner.retrieveName()
+private void reflection_api_usage.controller.ClassScanner.checkModifiers()
+private void reflection_api_usage.controller.ClassScanner.retrieveSuperclasses(java.lang.Class)
+private void reflection_api_usage.controller.ClassScanner.retrieveInterfaces(java.lang.Class)
+private void reflection_api_usage.controller.ClassScanner.retrieveFields(java.lang.Class)
+private void reflection_api_usage.controller.ClassScanner.retrieveMethods(java.lang.Class)
+private void reflection_api_usage.controller.ClassScanner.retrieveConstructors()
+private void reflection_api_usage.controller.ClassScanner.retrieveModifiers(int)
+private void reflection_api_usage.controller.ClassScanner.checkHierarchy(java.lang.Class,reflection_api_usage.controller.PropChecker)
+private boolean reflection_api_usage.controller.ClassScanner.hasSuperclass(java.lang.Class)
+private java.lang.Class reflection_api_usage.controller.ClassScanner.checkParentClass(java.lang.Class)
+private void reflection_api_usage.controller.ClassScanner.lambda$retrieveMethods$3(java.lang.Class)
+private void reflection_api_usage.controller.ClassScanner.lambda$retrieveFields$2(java.lang.Class)
+private void reflection_api_usage.controller.ClassScanner.lambda$retrieveInterfaces$1(java.lang.Class)
+private void reflection_api_usage.controller.ClassScanner.lambda$retrieveSuperclasses$0(java.lang.Class)
+Constructors of class:
+public reflection_api_usage.controller.ClassScanner(java.lang.String)
+Class ================>reflection_api_usage.controller.FieldGetter<================
+Class name:
+FieldGetter
+Class full name:
+reflection_api_usage.controller.FieldGetter
+Class modifiers:
+Public - true
+Protected - false
+Private - false
+Static - false
+Final - true
+Abstract - false
+Superclasses of the class:
+Object
+Interfaces of class:
+Fields of class:
+Methods of class:
+public static java.lang.String reflection_api_usage.controller.FieldGetter.getString(java.lang.Object,java.lang.String)
+Constructors of class:
+private reflection_api_usage.controller.FieldGetter()
+Class ================>reflection_api_usage.controller.FieldsSetter<================
+Class name:
+FieldsSetter
+Class full name:
+reflection_api_usage.controller.FieldsSetter
+Class modifiers:
+Public - true
+Protected - false
+Private - false
+Static - false
+Final - true
+Abstract - false
+Superclasses of the class:
+Object
+Interfaces of class:
+Fields of class:
+Methods of class:
+public static void reflection_api_usage.controller.FieldsSetter.setString(java.lang.Object,java.lang.String,java.lang.String)
+Constructors of class:
+private reflection_api_usage.controller.FieldsSetter()
+Class ================>reflection_api_usage.controller.MethodInvoker<================
+Class name:
+MethodInvoker
+Class full name:
+reflection_api_usage.controller.MethodInvoker
+Class modifiers:
+Public - true
+Protected - false
+Private - false
+Static - false
+Final - true
+Abstract - false
+Superclasses of the class:
+Object
+Interfaces of class:
+Fields of class:
+Methods of class:
+public static java.lang.String reflection_api_usage.controller.MethodInvoker.invokeMethod(java.lang.Object,java.lang.String)
+Constructors of class:
+private reflection_api_usage.controller.MethodInvoker()
+Class ================>reflection_api_usage.controller.PropChecker<================
+Class name:
+PropChecker
+Class full name:
+reflection_api_usage.controller.PropChecker
+Class modifiers:
+Public - true
+Protected - false
+Private - false
+Static - false
+Final - false
+Abstract - true
+Superclasses of the class:
+Interfaces of class:
+Fields of class:
+Methods of class:
+Constructors of class:
+Class ================>reflection_api_usage.entity.Appliance<================
+Class name:
+Appliance
+Class full name:
+reflection_api_usage.entity.Appliance
+Class modifiers:
+Public - true
+Protected - false
+Private - false
+Static - false
+Final - false
+Abstract - false
+Superclasses of the class:
+ElectricEquipment
+Object
+Interfaces of class:
+interface java.io.Serializable
+interface java.lang.Cloneable
+Fields of class:
+private category
+private function
+private weigh
+private voltage
+Methods of class:
+public boolean reflection_api_usage.entity.Appliance.equals(java.lang.Object)
+public int reflection_api_usage.entity.Appliance.hashCode()
+private java.lang.String reflection_api_usage.entity.Appliance.getCategory()
+Constructors of class:
+public reflection_api_usage.entity.Appliance()
+public reflection_api_usage.entity.Appliance(float,int)
+Class ================>reflection_api_usage.entity.ElectricEquipment<================
+Class name:
+ElectricEquipment
+Class full name:
+reflection_api_usage.entity.ElectricEquipment
+Class modifiers:
+Public - true
+Protected - false
+Private - false
+Static - false
+Final - false
+Abstract - true
+Superclasses of the class:
+Object
+Interfaces of class:
+interface java.lang.Cloneable
+Fields of class:
+private weigh
+private voltage
+Methods of class:
+Constructors of class:
+public reflection_api_usage.entity.ElectricEquipment()
+public reflection_api_usage.entity.ElectricEquipment(float,int)
+Class ================>reflection_api_usage.entity.Hoover<================
+Class name:
+Hoover
+Class full name:
+reflection_api_usage.entity.Hoover
+Class modifiers:
+Public - true
+Protected - false
+Private - false
+Static - false
+Final - false
+Abstract - false
+Superclasses of the class:
+Appliance
+ElectricEquipment
+Object
+Interfaces of class:
+interface java.io.Serializable
+interface java.lang.Cloneable
+Fields of class:
+private name
+private brand
+private originCountry
+private isPowerOn
+private category
+private function
+private weigh
+private voltage
+Methods of class:
+public boolean reflection_api_usage.entity.Hoover.equals(java.lang.Object)
+public int reflection_api_usage.entity.Hoover.hashCode()
+public boolean reflection_api_usage.entity.Appliance.equals(java.lang.Object)
+public int reflection_api_usage.entity.Appliance.hashCode()
+private java.lang.String reflection_api_usage.entity.Appliance.getCategory()
+Constructors of class:
+public reflection_api_usage.entity.Hoover(float,int,java.lang.String,java.lang.String,java.lang.String)
+public reflection_api_usage.entity.Hoover(float,int)
+public reflection_api_usage.entity.Hoover()
+Class ================>reflection_api_usage.view.Printer<================
+Class name:
+Printer
+Class full name:
+reflection_api_usage.view.Printer
+Class modifiers:
+Public - true
+Protected - false
+Private - false
+Static - false
+Final - true
+Abstract - false
+Superclasses of the class:
+Object
+Interfaces of class:
+Fields of class:
+private consumers
+private consumerArr
+private consumerFields
+private consumerMethods
+private consumerConstructor
+private consumerObj
+Methods of class:
+public void reflection_api_usage.view.Printer.print(java.lang.Object)
+public void reflection_api_usage.view.Printer.print(java.util.List)
+private static void reflection_api_usage.view.Printer.lambda$new$0(java.util.List)
+private static void reflection_api_usage.view.Printer.lambda$new$4(java.lang.reflect.Constructor[])
+private static void reflection_api_usage.view.Printer.lambda$new$3(java.lang.reflect.Method[])
+private static void reflection_api_usage.view.Printer.lambda$new$2(java.lang.reflect.Field[])
+private static void reflection_api_usage.view.Printer.lambda$new$1(java.lang.Class[])
+Constructors of class:
+public reflection_api_usage.view.Printer()
+Class ================>reflection_api_usage.controller.Executor<================
+Class name:
+Executor
+Class full name:
+reflection_api_usage.controller.Executor
+Class modifiers:
+Public - true
+Protected - false
+Private - false
+Static - false
+Final - true
+Abstract - false
+Superclasses of the class:
+Object
+Interfaces of class:
+Fields of class:
+private keyCounter
+private allAppClasses
+private equipment
+private classCreator
+Methods of class:
+public void reflection_api_usage.controller.Executor.execute()
+public java.util.Map reflection_api_usage.controller.Executor.getEquipment()
+private void reflection_api_usage.controller.Executor.getMetadataAllAppClasses(java.lang.String[])
+private void reflection_api_usage.controller.Executor.setEquipmentMapViaReflectionApi()
+private int reflection_api_usage.controller.Executor.getKeyCounter()
+Constructors of class:
+public reflection_api_usage.controller.Executor()
+Class ================>reflection_api_usage.Runner<================
+Class name:
+Runner
+Class full name:
+reflection_api_usage.Runner
+Class modifiers:
+Public - true
+Protected - false
+Private - false
+Static - false
+Final - false
+Abstract - false
+Superclasses of the class:
+Object
+Interfaces of class:
+Fields of class:
+private static demarcationLine
+Methods of class:
+public static void reflection_api_usage.Runner.main(java.lang.String[])
+Constructors of class:
+public reflection_api_usage.Runner()
+====================================================
+Cleaning
+Hoovers
+Hoovers
+
+Process finished with exit code 0
