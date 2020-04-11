@@ -1,0 +1,14 @@
+/Library/Java/JavaVirtualMachines/jdk-13.0.2.jdk/Contents/Home/bin/java --enable-preview "-javaagent:/Applications/IntelliJ IDEA CE.app/Contents/lib/idea_rt.jar=49521:/Applications/IntelliJ IDEA CE.app/Contents/bin" -Dfile.encoding=UTF-8 -classpath /Users/angener/Desktop/epam/webDevelopment/projects/mentoringTask/mentoringFirstTask/target/classes:/Users/angener/.m2/repository/io/github/classgraph/classgraph/4.8.68/classgraph-4.8.68.jar handle_annotation.Runner
+class handle_annotation.entity.Appliance
+class handle_annotation.entity.Hoover
+private java.lang.String handle_annotation.entity.Appliance.getCategory()
+public boolean handle_annotation.entity.Hoover.equals(java.lang.Object)
+private java.lang.String handle_annotation.entity.Appliance.function
+private float handle_annotation.entity.ElectricEquipment.weigh
+private int handle_annotation.entity.ElectricEquipment.voltage
+private java.lang.String handle_annotation.entity.Hoover.brand
+private java.lang.String handle_annotation.entity.Hoover.originCountry
+Hi, I'm the best hoover!
+I'm a appliance
+
+Process finished with exit code 0
