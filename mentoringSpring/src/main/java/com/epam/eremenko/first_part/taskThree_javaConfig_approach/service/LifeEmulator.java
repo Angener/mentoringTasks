@@ -1,6 +1,6 @@
-package com.epam.eremenko.taskThird_javaConfig_approach.service;
+package com.epam.eremenko.taskThree_javaConfig_approach.service;
 
-import com.epam.eremenko.taskThird_javaConfig_approach.entity.Position;
+import com.epam.eremenko.taskThree_javaConfig_approach.entity.Position;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -21,7 +21,8 @@ public class LifeEmulator {
                         SalaryService salaryService,
                         Position founder, Position cook,
                         Position administrator,
-                        Position waiter, Position superWaiter) {
+                        Position waiter, Position superWaiter
+    ) {
         this.employeeService = employeeService;
         this.positionService = positionService;
         this.salaryService = salaryService;
@@ -33,8 +34,13 @@ public class LifeEmulator {
     }
 
     public void emulate() {
+
+
+
+
+
         LOGGER.info("Hello! This is the output from" +
-                " the task that used only xml config.");
+                " the task that used java - config.");
         initializePositions();
         firstQuarter();
         employeeService.read();

@@ -1,30 +1,30 @@
-package com.epam.eremenko.taskOne_onlyXmlConfig;
+package com.epam.eremenko.first_part.taskTwo_annotationBased_approach;
 
-import com.epam.eremenko.taskOne_onlyXmlConfig.entity.Position;
-import com.epam.eremenko.taskOne_onlyXmlConfig.service.EmployeeService;
-import com.epam.eremenko.taskOne_onlyXmlConfig.service.PositionService;
+import com.epam.eremenko.first_part.taskTwo_annotationBased_approach.entity.Position;
+import com.epam.eremenko.first_part.taskTwo_annotationBased_approach.entity.Salary;
+import com.epam.eremenko.first_part.taskTwo_annotationBased_approach.service.EmployeeService;
+import com.epam.eremenko.first_part.taskTwo_annotationBased_approach.service.PositionService;
 import org.apache.log4j.Appender;
 import org.apache.log4j.Level;
-import org.junit.jupiter.api.BeforeEach;
-import org.junit.jupiter.api.Test;
-
-import static org.junit.jupiter.api.Assertions.*;
-
-import org.mockito.*;
-
-import static org.mockito.Mockito.*;
-
-import org.mockito.Mock;
 import org.apache.log4j.Logger;
 import org.apache.log4j.spi.LoggingEvent;
-
+import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.Test;
+import org.mockito.ArgumentCaptor;
+import org.mockito.Captor;
+import org.mockito.Mock;
+import org.mockito.MockitoAnnotations;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
+
+import static org.junit.jupiter.api.Assertions.*;
+import static org.mockito.Mockito.times;
+import static org.mockito.Mockito.verify;
 
 public class PositionServiceTest {
 
     private final ApplicationContext CONTEXT =
-            new ClassPathXmlApplicationContext("TaskOne.xml");
+            new ClassPathXmlApplicationContext("TaskTwo.xml");
     private final Logger LOGGER = Logger.getLogger(PositionService.class);
     private PositionService positionService;
     private EmployeeService employeeService;
@@ -42,10 +42,20 @@ public class PositionServiceTest {
         MockitoAnnotations.initMocks(this);
         LOGGER.addAppender(mockedAppender);
         LOGGER.setLevel(Level.INFO);
-        positionService = (PositionService) CONTEXT.getBean("positionService");
-        employeeService = (EmployeeService) CONTEXT.getBean("employeeService");
-        updatedPosition = (Position) CONTEXT.getBean("waiter");
-        actualPosition = (Position) CONTEXT.getBean("superWaiter");
+        positionService = CONTEXT.getBean(PositionService.class);
+        employeeService = CONTEXT.getBean(EmployeeService.class);
+        updatedPosition = CONTEXT.getBean(Position.class);
+        Salary waiterSalary = CONTEXT.getBean(Salary.class);
+        waiterSalary.setName("Waiter");
+        waiterSalary.setSalary(1865400);
+        updatedPosition.setName("Waiter");
+        updatedPosition.setSalary(waiterSalary);
+        actualPosition = CONTEXT.getBean(Position.class);
+        Salary superWaiterSalary = CONTEXT.getBean(Salary.class);
+        superWaiterSalary.setName("Super waiter");
+        superWaiterSalary.setSalary(201800);
+        actualPosition.setName("Super waiter");
+        actualPosition.setSalary(superWaiterSalary);
         positionService.create(actualPosition);
     }
 

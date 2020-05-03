@@ -1,4 +1,4 @@
-package com.epam.eremenko.taskThird_javaConfig_approach.entity;
+package com.epam.eremenko.taskThree_javaConfig_approach.entity;
 
 import java.io.Serializable;
 import java.util.Objects;

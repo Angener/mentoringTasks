@@ -1,6 +1,6 @@
-package com.epam.eremenko.taskThird_javaConfig_approach.service;
+package com.epam.eremenko.taskThree_javaConfig_approach.service;
 
-import com.epam.eremenko.taskThird_javaConfig_approach.entity.Position;
+import com.epam.eremenko.taskThree_javaConfig_approach.entity.Position;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.lang.NonNull;

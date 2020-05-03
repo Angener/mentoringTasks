@@ -1,29 +1,29 @@
-package com.epam.eremenko.taskOne_onlyXmlConfig;
+package com.epam.eremenko.first_part.taskTwo_annotationBased_approach;
 
-import com.epam.eremenko.taskOne_onlyXmlConfig.entity.Position;
-import com.epam.eremenko.taskOne_onlyXmlConfig.entity.Salary;
-import com.epam.eremenko.taskOne_onlyXmlConfig.service.SalaryService;
+import com.epam.eremenko.first_part.taskTwo_annotationBased_approach.entity.Position;
+import com.epam.eremenko.first_part.taskTwo_annotationBased_approach.entity.Salary;
+import com.epam.eremenko.first_part.taskTwo_annotationBased_approach.service.SalaryService;
 import org.apache.log4j.Appender;
 import org.apache.log4j.Level;
-import org.junit.jupiter.api.BeforeEach;
-import org.junit.jupiter.api.Test;
-
-import static org.junit.jupiter.api.Assertions.*;
-
-import org.mockito.*;
-
-import static org.mockito.Mockito.*;
-
-import org.mockito.Mock;
 import org.apache.log4j.Logger;
 import org.apache.log4j.spi.LoggingEvent;
-
+import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.Test;
+import org.mockito.ArgumentCaptor;
+import org.mockito.Captor;
+import org.mockito.Mock;
+import org.mockito.MockitoAnnotations;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
+import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertThrows;
+import static org.mockito.Mockito.times;
+import static org.mockito.Mockito.verify;
+
 public class SalaryServiceTest {
     ApplicationContext context =
-            new ClassPathXmlApplicationContext("TaskOne.xml");
+            new ClassPathXmlApplicationContext("TaskTwo.xml");
     private final Logger LOGGER = Logger.getLogger(SalaryService.class);
     SalaryService salaryService;
     Position position;
@@ -39,8 +39,13 @@ public class SalaryServiceTest {
         MockitoAnnotations.initMocks(this);
         LOGGER.addAppender(mockedAppender);
         LOGGER.setLevel(Level.INFO);
-        salaryService = (SalaryService) context.getBean("salaryService");
-        position = (Position) context.getBean("cook");
+        salaryService = context.getBean(SalaryService.class);
+        position = context.getBean(Position.class);
+        Salary cookSalary = context.getBean(Salary.class);
+        cookSalary.setName("Cook");
+        cookSalary.setSalary(2312000);
+        position.setName("Cook");
+        position.setSalary(cookSalary);
     }
 
     @Test
@@ -60,7 +65,7 @@ public class SalaryServiceTest {
 
     @Test
     public void changeSalaryWrongCoefficient() {
-        Salary salary = (Salary) context.getBean("cookSalary");
+        Salary salary = position.getSalary();
         double oldSalary = position.getSalary().getSalary();
         double coefficient = 0;
         salaryService.changeSalary(position, coefficient);

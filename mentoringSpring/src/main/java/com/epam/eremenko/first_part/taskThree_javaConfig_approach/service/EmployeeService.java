@@ -1,11 +1,12 @@
-package com.epam.eremenko.taskThird_javaConfig_approach.service;
+package com.epam.eremenko.taskThree_javaConfig_approach.service;
 
-import com.epam.eremenko.taskThird_javaConfig_approach.entity.Employee;
-import com.epam.eremenko.taskThird_javaConfig_approach.entity.Position;
+import com.epam.eremenko.taskThree_javaConfig_approach.Config;
+import com.epam.eremenko.taskThree_javaConfig_approach.entity.Employee;
+import com.epam.eremenko.taskThree_javaConfig_approach.entity.Position;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.context.ApplicationContext;
-import org.springframework.context.support.ClassPathXmlApplicationContext;
+import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 import org.springframework.lang.NonNull;
 
 import java.util.HashMap;
@@ -15,7 +16,7 @@ import java.util.Map;
 public class EmployeeService {
     private PositionService positionService;
     private static final ApplicationContext CONTEXT =
-            new ClassPathXmlApplicationContext("TaskThree.xml");
+            new AnnotationConfigApplicationContext(Config.class);
     private final static Logger LOGGER = LoggerFactory.getLogger(EmployeeService.class);
     private final Map<String, Employee> employees = new HashMap<>();
 

@@ -1,9 +1,11 @@
-package com.epam.eremenko.taskThird_javaConfig_approach.service;
+package com.epam.eremenko.taskThree_javaConfig_approach.service;
 
-import com.epam.eremenko.taskThird_javaConfig_approach.entity.Employee;
-import com.epam.eremenko.taskThird_javaConfig_approach.entity.Position;
+import com.epam.eremenko.taskThree_javaConfig_approach.entity.Employee;
+import com.epam.eremenko.taskThree_javaConfig_approach.entity.Position;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.context.annotation.Lazy;
 import org.springframework.lang.NonNull;
 
 import java.util.Collection;
@@ -13,6 +15,8 @@ import java.util.stream.Collectors;
 
 public class PositionService {
     private static final Logger LOGGER = LoggerFactory.getLogger(PositionService.class);
+    @Lazy
+    @Autowired
     private EmployeeService employeeService;
     private final Set<Position> positions = new HashSet<>();
 

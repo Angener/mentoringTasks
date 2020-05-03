@@ -1,8 +1,13 @@
-package com.epam.eremenko.taskThird_javaConfig_approach.entity;
+package com.epam.eremenko.taskTwo_annotationBased_approach.entity;
+
+import org.springframework.context.annotation.Scope;
+import org.springframework.stereotype.Component;
 
 import java.io.Serializable;
 import java.util.Objects;
 
+@Component
+@Scope("prototype")
 public class Salary implements Serializable {
     private static final long serialVersionUID = 1L;
     private String name;
