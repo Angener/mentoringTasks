@@ -1,9 +1,8 @@
-package com.epam.eremenko.first_part.taskOne_onlyXmlConfig;
+package com.epam.eremenko.first_part.taskOne_onlyXmlConfig.service;
 
 import com.epam.eremenko.first_part.taskOne_onlyXmlConfig.entity.Employee;
 import com.epam.eremenko.first_part.taskOne_onlyXmlConfig.entity.Position;
 import com.epam.eremenko.first_part.taskOne_onlyXmlConfig.entity.Salary;
-import com.epam.eremenko.first_part.taskOne_onlyXmlConfig.service.EmployeeService;
 import org.apache.log4j.Appender;
 import org.apache.log4j.Level;
 import org.junit.jupiter.api.BeforeEach;

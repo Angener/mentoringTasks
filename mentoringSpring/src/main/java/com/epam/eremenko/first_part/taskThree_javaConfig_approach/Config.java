@@ -1,9 +1,9 @@
-package com.epam.eremenko.taskThree_javaConfig_approach;
+package com.epam.eremenko.first_part.taskThree_javaConfig_approach;
 
-import com.epam.eremenko.taskThree_javaConfig_approach.entity.Employee;
-import com.epam.eremenko.taskThree_javaConfig_approach.entity.Position;
-import com.epam.eremenko.taskThree_javaConfig_approach.entity.Salary;
-import com.epam.eremenko.taskThree_javaConfig_approach.service.*;
+import com.epam.eremenko.first_part.taskThree_javaConfig_approach.entity.Employee;
+import com.epam.eremenko.first_part.taskThree_javaConfig_approach.entity.Position;
+import com.epam.eremenko.first_part.taskThree_javaConfig_approach.entity.Salary;
+import com.epam.eremenko.first_part.taskThree_javaConfig_approach.service.*;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.context.annotation.Scope;

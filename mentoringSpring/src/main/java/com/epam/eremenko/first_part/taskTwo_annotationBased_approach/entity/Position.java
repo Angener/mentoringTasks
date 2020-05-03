@@ -1,4 +1,4 @@
-package com.epam.eremenko.taskTwo_annotationBased_approach.entity;
+package com.epam.eremenko.first_part.taskTwo_annotationBased_approach.entity;
 
 import org.springframework.context.annotation.Scope;
 import org.springframework.stereotype.Component;

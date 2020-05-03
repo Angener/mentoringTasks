@@ -1,4 +1,4 @@
-package com.epam.eremenko.taskOne_onlyXmlConfig.entity;
+package com.epam.eremenko.first_part.taskOne_onlyXmlConfig.entity;
 
 import java.io.Serializable;
 import java.util.Objects;

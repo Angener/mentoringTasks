@@ -1,8 +1,7 @@
-package com.epam.eremenko.first_part.taskTwo_annotationBased_approach;
+package com.epam.eremenko.first_part.taskTwo_annotationBased_approach.service;
 
 import com.epam.eremenko.first_part.taskTwo_annotationBased_approach.entity.Position;
 import com.epam.eremenko.first_part.taskTwo_annotationBased_approach.entity.Salary;
-import com.epam.eremenko.first_part.taskTwo_annotationBased_approach.service.SalaryService;
 import org.apache.log4j.Appender;
 import org.apache.log4j.Level;
 import org.apache.log4j.Logger;

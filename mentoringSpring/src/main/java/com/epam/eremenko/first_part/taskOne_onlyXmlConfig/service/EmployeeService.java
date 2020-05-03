@@ -1,7 +1,7 @@
-package com.epam.eremenko.taskOne_onlyXmlConfig.service;
+package com.epam.eremenko.first_part.taskOne_onlyXmlConfig.service;
 
-import com.epam.eremenko.taskOne_onlyXmlConfig.entity.Employee;
-import com.epam.eremenko.taskOne_onlyXmlConfig.entity.Position;
+import com.epam.eremenko.first_part.taskOne_onlyXmlConfig.entity.Employee;
+import com.epam.eremenko.first_part.taskOne_onlyXmlConfig.entity.Position;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.context.ApplicationContext;

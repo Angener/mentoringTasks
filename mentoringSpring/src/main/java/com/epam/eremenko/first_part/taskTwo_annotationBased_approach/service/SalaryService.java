@@ -1,6 +1,6 @@
-package com.epam.eremenko.taskTwo_annotationBased_approach.service;
+package com.epam.eremenko.first_part.taskTwo_annotationBased_approach.service;
 
-import com.epam.eremenko.taskTwo_annotationBased_approach.entity.Position;
+import com.epam.eremenko.first_part.taskTwo_annotationBased_approach.entity.Position;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.lang.NonNull;

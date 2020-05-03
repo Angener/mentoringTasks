@@ -1,9 +1,9 @@
-package com.epam.eremenko.first_part.taskThree_javaConfig_approach;
+package com.epam.eremenko.first_part.taskThree_javaConfig_approach.service;
 
-import com.epam.eremenko.first_part.taskOne_onlyXmlConfig.entity.Employee;
-import com.epam.eremenko.first_part.taskOne_onlyXmlConfig.entity.Position;
-import com.epam.eremenko.first_part.taskOne_onlyXmlConfig.entity.Salary;
-import com.epam.eremenko.first_part.taskOne_onlyXmlConfig.service.EmployeeService;
+import com.epam.eremenko.first_part.taskThree_javaConfig_approach.Config;
+import com.epam.eremenko.first_part.taskThree_javaConfig_approach.entity.Employee;
+import com.epam.eremenko.first_part.taskThree_javaConfig_approach.entity.Position;
+import com.epam.eremenko.first_part.taskThree_javaConfig_approach.entity.Salary;
 import org.apache.log4j.Appender;
 import org.apache.log4j.Level;
 import org.apache.log4j.Logger;
@@ -15,7 +15,7 @@ import org.mockito.Captor;
 import org.mockito.Mock;
 import org.mockito.MockitoAnnotations;
 import org.springframework.context.ApplicationContext;
-import org.springframework.context.support.ClassPathXmlApplicationContext;
+import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -30,7 +30,7 @@ import static org.mockito.Mockito.verify;
 public class EmployeeServiceTest {
 
     private final ApplicationContext CONTEXT =
-            new ClassPathXmlApplicationContext("TaskOne.xml");
+            new AnnotationConfigApplicationContext(Config.class);
     private final Logger LOGGER = Logger.getLogger(EmployeeService.class);
     private EmployeeService employeeService;
     private final Position founder = (Position) CONTEXT.getBean("founder");
