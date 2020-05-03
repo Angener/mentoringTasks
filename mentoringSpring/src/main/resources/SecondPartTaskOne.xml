@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xsi:schemaLocation="
+           http://www.springframework.org/schema/beans
+           http://www.springframework.org/schema/beans/spring-beans-3.1.xsd
+           http://www.springframework.org/schema/context
+           http://www.springframework.org/schema/context/spring-context-3.1.xsd">
+    <context:annotation-config/>
+    <context:component-scan base-package="com.epam.eremenko.second_part.taskOne_abstractBeans.entity"/>
+    <context:property-placeholder location="A.properties"/>
+
+    <bean id="a" class="com.epam.eremenko.second_part.taskOne_abstractBeans.entity.A">
+        <property name="firstProperty" value="${a.firstProp}"/>
+        <property name="secondProperty" value="${a.secondProp}"/>
+    </bean>
+
+    <bean id="b" class="com.epam.eremenko.second_part.taskOne_abstractBeans.entity.B" autowire="constructor">
+        <constructor-arg value="I'm B-class object"/>
+    </bean>
+
+    <bean id="c" class="com.epam.eremenko.second_part.taskOne_abstractBeans.entity.C">
+        <property name="name" value="I'm C-class object"/>
+        <property name="d" ref="d"/>
+    </bean>
+
+    <bean id="d" class="com.epam.eremenko.second_part.taskOne_abstractBeans.entity.D" scope="prototype">
+        <property name="name" value="I'm D-class object"/>
+    </bean>
+
+    <bean id="e" class="com.epam.eremenko.second_part.taskOne_abstractBeans.entity.E">
+        <property name="name" value="I'm E-class object"/>
+        <replaced-method name="introduce" replacer="methodReplacement"/>
+    </bean>
+
+    <bean id="methodReplacement" class="com.epam.eremenko.second_part.taskOne_abstractBeans.MethodReplacement"/>
+
+    <bean id="f" class="com.epam.eremenko.second_part.taskOne_abstractBeans.entity.F"
+    init-method="init" destroy-method="destroy">
+        <property name="name" value="I'm F-class object"/>
+    </bean>
+
+    <bean id="bpp" class="com.epam.eremenko.second_part.taskOne_abstractBeans.CustomBeanPostProcessor"/>
+
+
+
+
+
+
+
+
+
+
+</beans>
