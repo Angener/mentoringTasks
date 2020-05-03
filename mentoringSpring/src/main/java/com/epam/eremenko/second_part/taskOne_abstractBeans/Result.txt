@@ -1,0 +1,41 @@
+/Library/Java/JavaVirtualMachines/jdk-13.0.2.jdk/Contents/Home/bin/java --enable-preview -javaagent:/Applications/IntelliJ IDEA CE.app/Contents/lib/idea_rt.jar=56693:/Applications/IntelliJ IDEA CE.app/Contents/bin -Dfile.encoding=UTF-8 -classpath /Users/angener/Desktop/epam/webDevelopment/projects/mentoringTask/mentoringSpring/target/classes:/Users/angener/.m2/repository/org/springframework/spring-context/5.2.5.RELEASE/spring-context-5.2.5.RELEASE.jar:/Users/angener/.m2/repository/org/springframework/spring-aop/5.2.5.RELEASE/spring-aop-5.2.5.RELEASE.jar:/Users/angener/.m2/repository/org/springframework/spring-beans/5.2.5.RELEASE/spring-beans-5.2.5.RELEASE.jar:/Users/angener/.m2/repository/org/springframework/spring-core/5.2.5.RELEASE/spring-core-5.2.5.RELEASE.jar:/Users/angener/.m2/repository/org/springframework/spring-jcl/5.2.5.RELEASE/spring-jcl-5.2.5.RELEASE.jar:/Users/angener/.m2/repository/org/springframework/spring-expression/5.2.5.RELEASE/spring-expression-5.2.5.RELEASE.jar:/Users/angener/.m2/repository/org/slf4j/slf4j-api/1.7.30/slf4j-api-1.7.30.jar:/Users/angener/.m2/repository/org/slf4j/slf4j-log4j12/1.7.30/slf4j-log4j12-1.7.30.jar:/Users/angener/.m2/repository/org/apache/logging/log4j/log4j-core/2.13.1/log4j-core-2.13.1.jar:/Users/angener/.m2/repository/org/apache/logging/log4j/log4j-api/2.13.1/log4j-api-2.13.1.jar:/Users/angener/.m2/repository/log4j/log4j/1.2.17/log4j-1.2.17.jar com.epam.eremenko.second_part.taskOne_abstractBeans.Runner
+Bean A{firstProperty='good', secondProperty=27} start with post processor
+Bean A{firstProperty='good', secondProperty=27} end with post processor
+Bean B{NAME='I'm B-class object', a=A{firstProperty='good', secondProperty=27}} start with post processor
+Bean B{NAME='I'm B-class object', a=A{firstProperty='good', secondProperty=27}} end with post processor
+Bean D{NAME='I'm D-class object'} start with post processor
+Bean D{NAME='I'm D-class object'} end with post processor
+Bean C{name='I'm C-class object', d=D{NAME='I'm D-class object'}} start with post processor
+Bean C{name='I'm C-class object', d=D{NAME='I'm D-class object'}} end with post processor
+Bean E{name='I'm E-class object'} start with post processor
+Bean E{name='I'm E-class object'} end with post processor
+Bean com.epam.eremenko.second_part.taskOne_abstractBeans.MethodReplacement@6127a7e start with post processor
+Bean com.epam.eremenko.second_part.taskOne_abstractBeans.MethodReplacement@6127a7e end with post processor
+[ INFO ] - Constructor invoked
+Bean F{name='I'm F-class object'} start with post processor
+[ INFO ] - init-method invoked
+Bean F{name='I'm F-class object'} end with post processor
+[ INFO ] - A{firstProperty='good', secondProperty=27}
+[ INFO ] - B{NAME='I'm B-class object', a=A{firstProperty='good', secondProperty=27}}
+[ INFO ] - C{name='I'm C-class object', d=D{NAME='I'm D-class object'}}
+[ INFO ] - Hello! You have replaced method in object of classclass com.epam.eremenko.second_part.taskOne_abstractBeans.entity.E$$EnhancerBySpringCGLIB$$8d0afd68
+[ INFO ] - destroy method invoked
+Bean A{firstProperty='good', secondProperty=27} start with post processor
+Bean A{firstProperty='good', secondProperty=27} end with post processor
+Bean B{NAME='I'm B-class object', a=A{firstProperty='good', secondProperty=27}} start with post processor
+Bean B{NAME='I'm B-class object', a=A{firstProperty='good', secondProperty=27}} end with post processor
+Bean D{NAME='I'm D-class object'} start with post processor
+Bean D{NAME='I'm D-class object'} end with post processor
+Bean C{name='I'm C-class object', d=D{NAME='I'm D-class object'}} start with post processor
+Bean C{name='I'm C-class object', d=D{NAME='I'm D-class object'}} end with post processor
+Bean E{name='I'm E-class object'} start with post processor
+Bean E{name='I'm E-class object'} end with post processor
+Bean com.epam.eremenko.second_part.taskOne_abstractBeans.MethodReplacement@78365cfa start with post processor
+Bean com.epam.eremenko.second_part.taskOne_abstractBeans.MethodReplacement@78365cfa end with post processor
+[ INFO ] - Constructor invoked
+Bean F{name='I'm F-class object'} start with post processor
+[ INFO ] - init-method invoked
+Bean F{name='I'm F-class object'} end with post processor
+[ INFO ] - destroy method invoked
+
+Process finished with exit code 0

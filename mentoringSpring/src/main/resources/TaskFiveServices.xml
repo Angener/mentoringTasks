@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="
+           http://www.springframework.org/schema/beans
+           http://www.springframework.org/schema/beans/spring-beans-3.1.xsd">
+    <import resource="TaskFiveEnt.xml"/>
+    <bean id="lifeEmulator"
+          class="com.epam.eremenko.second_part.taskTwo_upgradeSalaryEmulator.service.LifeEmulatorFactory"
+          factory-method="getBean"/>
+
+
+    <bean id="employeeService"
+          class="com.epam.eremenko.second_part.taskTwo_upgradeSalaryEmulator.service.EmployeeService"
+          autowire="byName"/>
+    <bean id="positionService"
+          class="com.epam.eremenko.second_part.taskTwo_upgradeSalaryEmulator.service.PositionService"
+          autowire="byType"/>
+    <bean id="salaryService" class="com.epam.eremenko.second_part.taskTwo_upgradeSalaryEmulator.service.SalaryService"
+          autowire="byName">
+        <property name="salaries">
+            <set>
+                <ref bean="founderSalary"/>
+                <ref bean="cookSalary"/>
+                <ref bean="administratorSalary"/>
+                <ref bean="waiterSalary"/>
+                <ref bean="superWaiterSalary"/>
+            </set>
+        </property>
+    </bean>
+</beans>

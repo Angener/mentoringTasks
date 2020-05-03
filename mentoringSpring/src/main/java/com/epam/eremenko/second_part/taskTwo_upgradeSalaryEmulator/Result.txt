@@ -1,0 +1,62 @@
+/Library/Java/JavaVirtualMachines/jdk-13.0.2.jdk/Contents/Home/bin/java --enable-preview -javaagent:/Applications/IntelliJ IDEA CE.app/Contents/lib/idea_rt.jar=56675:/Applications/IntelliJ IDEA CE.app/Contents/bin -Dfile.encoding=UTF-8 -classpath /Users/angener/Desktop/epam/webDevelopment/projects/mentoringTask/mentoringSpring/target/classes:/Users/angener/.m2/repository/org/springframework/spring-context/5.2.5.RELEASE/spring-context-5.2.5.RELEASE.jar:/Users/angener/.m2/repository/org/springframework/spring-aop/5.2.5.RELEASE/spring-aop-5.2.5.RELEASE.jar:/Users/angener/.m2/repository/org/springframework/spring-beans/5.2.5.RELEASE/spring-beans-5.2.5.RELEASE.jar:/Users/angener/.m2/repository/org/springframework/spring-core/5.2.5.RELEASE/spring-core-5.2.5.RELEASE.jar:/Users/angener/.m2/repository/org/springframework/spring-jcl/5.2.5.RELEASE/spring-jcl-5.2.5.RELEASE.jar:/Users/angener/.m2/repository/org/springframework/spring-expression/5.2.5.RELEASE/spring-expression-5.2.5.RELEASE.jar:/Users/angener/.m2/repository/org/slf4j/slf4j-api/1.7.30/slf4j-api-1.7.30.jar:/Users/angener/.m2/repository/org/slf4j/slf4j-log4j12/1.7.30/slf4j-log4j12-1.7.30.jar:/Users/angener/.m2/repository/org/apache/logging/log4j/log4j-core/2.13.1/log4j-core-2.13.1.jar:/Users/angener/.m2/repository/org/apache/logging/log4j/log4j-api/2.13.1/log4j-api-2.13.1.jar:/Users/angener/.m2/repository/log4j/log4j/1.2.17/log4j-1.2.17.jar com.epam.eremenko.second_part.taskTwo_upgradeSalaryEmulator.Runner
+[ WARN ] - Waiter salary less than 25 000 !
+[ WARN ] - Super waiter salary less than 25 000 !
+[ WARN ] - Waiter salary less than 25 000 !
+[ WARN ] - Super waiter salary less than 25 000 !
+[ WARN ] - Waiter salary less than 25 000 !
+[ WARN ] - Super waiter salary less than 25 000 !
+[ INFO ] - Hello! This is the output from the task that used only xml config.
+[ INFO ] - Created Position: Founder. Salary: 1230000.0.
+[ INFO ] - Created Position: Cook. Salary: 40526.90691383692.
+[ INFO ] - Created Position: Administrator. Salary: 32000.0.
+[ INFO ] - Created Position: Waiter. Salary: 12000.0.
+[ INFO ] - Hired Employee: Vaska. Position: Founder. Salary: 1230000.0.
+[ INFO ] - Hired Employee: Leshka. Position: Founder. Salary: 1230000.0.
+[ INFO ] - Hired Employee: froska. Position: Waiter. Salary: 12000.0.
+[ INFO ] - Hired Employee: Jemmy. Position: Administrator. Salary: 32000.0.
+[ INFO ] - Hired Employee: Pashka. Position: Cook. Salary: 67706.60277821156.
+[ INFO ] - Hired Employee: Grisha. Position: Waiter. Salary: 12000.0.
+[ INFO ] - Hired Employee: Stasik. Position: Waiter. Salary: 12000.0.
+[ INFO ] - Exist employees: 
+[ INFO ] - Employee: Leshka. Position: Founder. Salary: 1230000.0.
+[ INFO ] - Employee: Vaska. Position: Founder. Salary: 1230000.0.
+[ INFO ] - Employee: Stasik. Position: Waiter. Salary: 12000.0.
+[ INFO ] - Employee: Jemmy. Position: Administrator. Salary: 32000.0.
+[ INFO ] - Employee: Pashka. Position: Cook. Salary: 67706.60277821156.
+[ INFO ] - Employee: froska. Position: Waiter. Salary: 12000.0.
+[ INFO ] - Employee: Grisha. Position: Waiter. Salary: 12000.0.
+[ INFO ] - Fired Employee: Stasik. Position: Waiter. Salary: 12000.0.
+[ INFO ] - Hired Employee: Tolik. Position: Waiter. Salary: 12000.0.
+[ INFO ] - Salary was corrected for Position: Founder. Salary: 3321000.0. Coefficient 2.7
+[ INFO ] - Fired Employee: Jemmy. Position: Administrator. Salary: 32000.0.
+[ INFO ] - Hired Employee: Alenka. Position: Administrator. Salary: 32000.0.
+[ INFO ] - Hired Employee: Valusha. Position: Administrator. Salary: 32000.0.
+[ INFO ] - Position: Waiter. Salary: 12000.0. is changing to Position: Super waiter. Salary: 22000.0.
+[ INFO ] - Deleted Position: Waiter. Salary: 12000.0.
+[ INFO ] - Created Position: Super waiter. Salary: 22000.0.
+[ INFO ] - Tolik changed position.
+[ INFO ] - froska changed position.
+[ INFO ] - Grisha changed position.
+[ INFO ] - Salary was corrected for Position: Administrator. Salary: 64000.0. Coefficient 2.0
+[ INFO ] - Deleted Position: Founder. Salary: 3321000.0.
+[ INFO ] - Exist positions
+[ INFO ] - Position: Founder. Salary: 3321000.0.
+[ INFO ] - Position: Administrator. Salary: 64000.0.
+[ INFO ] - Position: Super waiter. Salary: 22000.0.
+[ INFO ] - Position: Cook. Salary: 40526.90691383692.
+[ INFO ] - Exist employees: 
+[ INFO ] - Employee: Tolik. Position: Super waiter. Salary: 22000.0.
+[ INFO ] - Employee: Leshka. Position: Founder. Salary: 1230000.0.
+[ INFO ] - Employee: Alenka. Position: Administrator. Salary: 32000.0.
+[ INFO ] - Employee: Vaska. Position: Founder. Salary: 1230000.0.
+[ INFO ] - Employee: Pashka. Position: Cook. Salary: 67706.60277821156.
+[ INFO ] - Employee: froska. Position: Super waiter. Salary: 22000.0.
+[ INFO ] - Employee: Grisha. Position: Super waiter. Salary: 22000.0.
+[ INFO ] - Employee: Valusha. Position: Administrator. Salary: 32000.0.
+[ INFO ] - Salary Cook: 1230000.0.
+[ INFO ] - Salary Cook: 40526.90691383692.
+[ INFO ] - Salary Administrator: 64000.0.
+[ INFO ] - Salary Waiter: 12000.0.
+[ INFO ] - Salary Super waiter: 22000.0.
+
+Process finished with exit code 0
