@@ -15,7 +15,7 @@ public class FileBufferedStreamMover {
                     System.out.println("New file created");
                 }
             } catch (IOException ex) {
-                System.err.println("Yuh");
+                System.err.println("Decline");
             }
         }
 
@@ -28,7 +28,7 @@ public class FileBufferedStreamMover {
             }
             fos.write(fis.read());
         } catch (IOException ex) {
-            System.err.println("Yuh");
+            System.err.println("Decline");
         }
 
         if (originalFile.delete()) {

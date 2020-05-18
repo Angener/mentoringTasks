@@ -16,7 +16,7 @@ public class FileChanelMover {
                     System.out.println("New file created");
                 }
             } catch (IOException ex) {
-                System.err.println("Yuh");
+                System.err.println("Decline");
             }
         }
 
@@ -26,7 +26,7 @@ public class FileChanelMover {
         ) {
             to.transferFrom(from, 0, from.size());
         } catch (IOException ex) {
-            System.out.println("Yuh");
+            System.out.println("Decline");
         }
         if (originalFile.delete()) {
             System.out.println("Moved");

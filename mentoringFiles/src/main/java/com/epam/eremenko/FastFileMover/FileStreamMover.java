@@ -14,7 +14,7 @@ public class FileStreamMover {
                     System.out.println("New file created");
                 }
             } catch (IOException ex) {
-                System.err.println("Yuh");
+                System.err.println("Decline");
             }
         }
 
@@ -26,7 +26,7 @@ public class FileStreamMover {
                 fos.write(byteCopied);
             }
         } catch (IOException ex) {
-            System.err.println("Yuh");
+            System.err.println("Decline");
         }
         if (originalFile.delete()) {
             System.out.println("copied");
