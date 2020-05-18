@@ -3,7 +3,7 @@ package com.epam.eremenko.disk_analizer;
 
 import org.apache.commons.lang3.StringUtils;
 
-import java.io.File;
+import java.io.*;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Comparator;
@@ -14,17 +14,19 @@ public class DiskAnalyzer {
     private static int sCounter = 0;
     private static final List<File> list = new ArrayList<>();
 
-
     public static void get(String path, String number) {
         File directory = new File(path);
+        checkInput(directory, number);
         readFiles(directory);
+        applyFunction(number);
+    }
 
-        switch (number) {
-            case ("1") -> System.out.println(getTheBiggestLetterQuantityFile());
-            case ("2") -> System.out.println(getTheFiveBiggestFiles());
-            case ("3") -> System.out.println(getAverageSizeFilesOfDirectory());
-            case ("4") -> System.out.println(getAlphabetQuantity());
-            default -> throw new IllegalArgumentException("Unknown choice");
+    private static void checkInput(File directory, String number) {
+        List<String> validNumbers = Arrays.asList("1", "2", "3", "4");
+        if (directory == null || !directory.exists() || !directory.isDirectory()) {
+            throw new IllegalArgumentException("Wrong directory: " + directory);
+        } else if (!validNumbers.contains(number)) {
+            throw new IllegalArgumentException("Incorrect function number: " + number);
         }
     }
 
@@ -39,6 +41,16 @@ public class DiskAnalyzer {
                     })
                     .filter(File::isDirectory)
                     .forEach(DiskAnalyzer::readFiles);
+        }
+    }
+
+    private static void applyFunction(String number) {
+        switch (number) {
+            case ("1") -> printToFile(getTheBiggestLetterQuantityFile());
+            case ("2") -> printToFile(getTheFiveBiggestFiles());
+            case ("3") -> printToFile(getAverageSizeFilesOfDirectory());
+            case ("4") -> printToFile(getAlphabetQuantity());
+            default -> throw new IllegalArgumentException("Unknown choice");
         }
     }
 
@@ -81,22 +93,26 @@ public class DiskAnalyzer {
         return String.valueOf(sizeCounter / fileCounter);
     }
 
-    private static String getAlphabetQuantity(){
+    private static String getAlphabetQuantity() {
         int startWithA = 0;
         int startWithB = 0;
 
-        for (File file : list){
-            if (file.getName().toLowerCase().startsWith("a")){
+        for (File file : list) {
+            if (file.getName().toLowerCase().startsWith("a")) {
                 startWithA++;
-            } else if (file.getName().toLowerCase().startsWith("b")){
+            } else if (file.getName().toLowerCase().startsWith("b")) {
                 startWithB++;
             }
         }
         return "Start with \"A\" files: " + startWithA +
-        "\n Start with \"B\" files: " + startWithB;
+                "\n Start with \"B\" files: " + startWithB;
     }
 
-    public static void main(String[] args) {
-        get("/Users/angener/Documents", "4");
+    private static void printToFile(String result) {
+        try (Writer writer = new FileWriter("target/save/diskAnalyzer.txt")) {
+            writer.write(result);
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
     }
 }
