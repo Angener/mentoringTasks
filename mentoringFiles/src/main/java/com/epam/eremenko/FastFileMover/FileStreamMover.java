@@ -3,7 +3,6 @@ package com.epam.eremenko.FastFileMover;
 import java.io.*;
 
 public class FileStreamMover {
-
     public static void moveRename(String exist, String distinct) {
         final String filename = "file.txt";
         final File originalFile = new File(exist, filename);
