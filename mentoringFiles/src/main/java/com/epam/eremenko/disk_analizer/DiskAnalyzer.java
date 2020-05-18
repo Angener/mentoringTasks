@@ -23,6 +23,7 @@ public class DiskAnalyzer {
             case ("1") -> System.out.println(getTheBiggestLetterQuantityFile());
             case ("2") -> System.out.println(getTheFiveBiggestFiles());
             case ("3") -> System.out.println(getAverageSizeFilesOfDirectory());
+            case ("4") -> System.out.println(getAlphabetQuantity());
             default -> throw new IllegalArgumentException("Unknown choice");
         }
     }
@@ -80,9 +81,22 @@ public class DiskAnalyzer {
         return String.valueOf(sizeCounter / fileCounter);
     }
 
+    private static String getAlphabetQuantity(){
+        int startWithA = 0;
+        int startWithB = 0;
 
+        for (File file : list){
+            if (file.getName().toLowerCase().startsWith("a")){
+                startWithA++;
+            } else if (file.getName().toLowerCase().startsWith("b")){
+                startWithB++;
+            }
+        }
+        return "Start with \"A\" files: " + startWithA +
+        "\n Start with \"B\" files: " + startWithB;
+    }
 
     public static void main(String[] args) {
-        get("/Users/angener/Documents", "3");
+        get("/Users/angener/Documents", "4");
     }
 }
