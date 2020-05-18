@@ -22,6 +22,7 @@ public class DiskAnalyzer {
         switch (number) {
             case ("1") -> System.out.println(getTheBiggestLetterQuantityFile());
             case ("2") -> System.out.println(getTheFiveBiggestFiles());
+            case ("3") -> System.out.println(getAverageSizeFilesOfDirectory());
             default -> throw new IllegalArgumentException("Unknown choice");
         }
     }
@@ -67,9 +68,21 @@ public class DiskAnalyzer {
         return sb.toString();
     }
 
+    private static String getAverageSizeFilesOfDirectory() {
+        long sizeCounter = 0;
+        int fileCounter = 0;
+        for (File file : list) {
+            if (file.isFile()) {
+                sizeCounter += file.length();
+                fileCounter++;
+            }
+        }
+        return String.valueOf(sizeCounter / fileCounter);
+    }
+
 
 
     public static void main(String[] args) {
-        get("/Users/angener/Documents", "2");
+        get("/Users/angener/Documents", "3");
     }
 }
