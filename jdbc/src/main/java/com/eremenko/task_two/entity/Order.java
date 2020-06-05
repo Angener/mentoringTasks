@@ -9,7 +9,7 @@ import java.util.Objects;
 
 public class Order implements DaoTransferObject, Serializable {
     private static final long serialVersionUID = 1L;
-    private static final String TYPE = "Order";
+    private static final String TYPE = "orders";
 
     private int id;
     private int customerId;

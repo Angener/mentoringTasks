@@ -7,7 +7,7 @@ import java.util.Objects;
 
 public class Customer implements DaoTransferObject, Serializable {
     private static final long serialVersionUID = 1L;
-    private static final String TYPE = "Customer";
+    private static final String TYPE = "customers";
 
     private int id;
     private String name;

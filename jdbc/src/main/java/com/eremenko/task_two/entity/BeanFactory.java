@@ -23,4 +23,13 @@ public final class BeanFactory {
         return new Timestamp(Calendar.getInstance().getTime().getTime());
     }
 
+    public static Order getOrder(){
+        return new Order();
+    }
+
+
+    public static Customer getCustomer(){
+        return new Customer();
+    }
+
 }
